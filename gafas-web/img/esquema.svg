@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" font-family="sans-serif" font-size="14">
+<rect width="560" height="260" rx="16" fill="#151c33"/>
+<g fill="#0a0f1d" stroke="#4fd1c5" stroke-width="3">
+<rect x="210" y="85" width="140" height="90" rx="10"/>
+<rect x="30" y="40" width="120" height="60" rx="8"/>
+<rect x="30" y="160" width="120" height="60" rx="8"/>
+<rect x="420" y="40" width="110" height="60" rx="8"/>
+<rect x="420" y="160" width="110" height="60" rx="8"/></g>
+<g stroke="#e8ecf8" stroke-width="2.5" fill="none">
+<path d="M150 70 H180 V105 H210"/><path d="M150 190 H180 V155 H210"/>
+<path d="M350 105 H390 V70 H420"/><path d="M350 155 H390 V190 H420"/></g>
+<g fill="#e8ecf8" text-anchor="middle">
+<text x="280" y="125" font-weight="700">ARDUINO</text><text x="280" y="147" fill="#9aa6c7">Nano / Uno</text>
+<text x="90" y="75">Sensor</text><text x="90" y="93" fill="#9aa6c7">ultrasónico</text>
+<text x="90" y="195">Buzzer</text><text x="90" y="213" fill="#9aa6c7">pin 8</text>
+<text x="475" y="75">Batería 9V</text><text x="475" y="93" fill="#9aa6c7">VIN y GND</text>
+<text x="475" y="195">Interruptor</text><text x="475" y="213" fill="#9aa6c7">(opcional)</text></g>
+<text x="195" y="60" fill="#4fd1c5" font-size="12">TRIG 9 · ECHO 10</text>
+</svg>

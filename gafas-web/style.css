@@ -1,0 +1,49 @@
+:root{--bg:#0b1020;--card:#151c33;--tx:#e8ecf8;--mu:#9aa6c7;--ac:#4fd1c5;--bd:#26304f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f6fb;--card:#fff;--tx:#141a2e;--mu:#56607f;--ac:#0e9488;--bd:#dde2ef}}
+:root[data-theme="dark"]{--bg:#0b1020;--card:#151c33;--tx:#e8ecf8;--mu:#9aa6c7;--ac:#4fd1c5;--bd:#26304f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--bd);z-index:5}
+nav{max-width:960px;margin:auto;display:flex;gap:6px;align-items:center;padding:10px 16px;overflow-x:auto}
+nav b{color:var(--ac);margin-right:auto;white-space:nowrap}
+nav a{color:var(--mu);text-decoration:none;padding:6px 12px;border-radius:99px;white-space:nowrap;font-size:14px}
+nav a:hover{background:var(--card);color:var(--tx)}
+main{max-width:960px;margin:auto;padding:0 16px}
+section{padding:48px 0 8px}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0 0 12px}
+h2{font-size:28px;margin:0 0 6px}
+.mu{color:var(--mu)}
+.hero{padding-top:64px;text-align:center}
+.hero p{max-width:600px;margin:0 auto 20px}
+.btn{display:inline-block;background:var(--ac);color:#06201d;border:0;padding:10px 20px;border-radius:10px;font-weight:600;cursor:pointer;text-decoration:none;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px}
+.card h3{margin:0 0 6px;font-size:17px}
+.ic{font-size:28px}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:18px 0 0}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 16px 14px 60px;margin-bottom:10px;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:14px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--ac);color:#06201d;font-weight:700;display:grid;place-items:center}
+ol.steps b{display:block}
+pre{background:#0a0f1d;color:#d6e2ff;border:1px solid var(--bd);border-radius:12px;padding:16px;overflow-x:auto;font-size:13px;line-height:1.5;margin:0}
+.tabs{display:flex;gap:8px;margin:16px 0 10px;flex-wrap:wrap}
+.tabs button{background:var(--card);color:var(--tx);border:1px solid var(--bd);padding:7px 14px;border-radius:99px;cursor:pointer}
+.tabs button.on{background:var(--ac);color:#06201d;border-color:var(--ac)}
+.cp{margin-top:10px}
+form{display:grid;gap:12px;margin-top:16px}
+input,textarea,select{width:100%;background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:11px;font:inherit}
+.faq details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 16px;margin-top:10px}
+.faq summary{cursor:pointer;font-weight:600}
+footer{text-align:center;color:var(--mu);padding:48px 16px 32px;font-size:14px}
+
+/* --- varias paginas --- */
+nav a.on{background:var(--ac);color:#06201d;font-weight:600}
+.pic{width:100%;max-width:520px;display:block;margin:18px auto;border-radius:16px;border:1px solid var(--bd)}
+.hero .pic{margin-bottom:26px}
+.links a.card{text-decoration:none;color:inherit;display:block;transition:transform .15s,border-color .15s}
+.links a.card:hover{transform:translateY(-3px);border-color:var(--ac)}
+.social{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+.social a{display:flex;align-items:center;gap:16px;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;transition:transform .15s,border-color .15s}
+.social a:hover{transform:translateY(-3px);border-color:var(--ac)}
+.social img{width:56px;height:56px;flex:none}
+.social b{display:block;font-size:17px}
+.social span{color:var(--mu);font-size:14px;word-break:break-word}
